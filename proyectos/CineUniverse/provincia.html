@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cine Universe</title>
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery.cycle.all.js"></script>
+<script src="js/codigo.js"></script>
+<script src="js/menu_fijo.js"></script>
+</head>
+
+<body>
+
+<div id="ventana">
+<div id="centrar_ventana_sesion">
+	<div id="contenedor_iniciar">
+		<div id="linea_iniciar">
+		<div id="cerrar"><img src="img/cerrar.png" alt=""></div>
+			<h2>CREAR UNA CUENTA</h2>
+		</div>
+		
+		<div id="contenedor_iniciar_sesion">
+		<div id="crear_cuenta">
+		
+		<div id="linea_cuenta">
+		<div class="contenedor_input_sesion">
+			<p class="n_formulario">Nombres</p>
+			<input  class="c_formulario"  id="ipt_nombre" type="text" placeholder="Nombre Completo">
+			<p class="letra_error1" id="nombre_input"></p><b class="triangulo" id="triangulo1">&#x25BC;</b>
+        </div>
+			
+		<div class="contenedor_input_sesion">	
+			<p class="n_formulario">Apellidos</p>
+			<input class="c_formulario" id="ipt_apellido" type="text" placeholder="Apellido Completo">
+			<p class="letra_error1" id="apellido_input"></p><b class="triangulo" id="triangulo2">&#x25BC;</b>
+		</div>	
+		
+		<div class="contenedor_input_sesion">			
+			<p class="n_formulario">Correo electrónico</p>
+			<input class="c_formulario" id="ipt_correo" type="text" placeholder="Correo">
+			<p class="letra_error1" id="correo_input">Correo Incorrecto</p><b class="triangulo" id="triangulo3">&#x25BC;</b>
+		</div>	
+			
+		
+		<div class="contenedor_input_sesion">
+			<p class="n_formulario">Teléfono</p>
+			<input class="c_formulario" id="ipt_telefono" type="text" placeholder="Teléfono">
+			<p class="letra_error1" id="telefono_input">Telefono Incorrecto</p><b class="triangulo" id="triangulo4">&#x25BC;</b>
+		</div>
+		
+		<div class="contenedor_input_sesion">	
+			<p class="n_formulario">Contraseña</p>
+			<input class="c_formulario" id="ipt_contrasena" type="text" placeholder="Contraseña">
+            <p class="letra_error1" id="contrasena_input">Contraseña Incorrecta</p><b class="triangulo" id="triangulo5">&#x25BC;</b>
+        </div> 
+			
+			<div id="aceptar_politica">
+			<input id="check" type="checkbox">
+			<p id="politica">He leído y acepto los Términos y Condiciones así como las Políticas de Privacidad de CineUniverse.</p>
+			<input id="boton_cuenta" type="button" value="CREAR CUENTA">
+			</div>
+		</div>
+		</div>
+		<div class="ingresar_cuenta">
+			<div class="informacion">
+				<p>Con tu cuenta puedes:</p>
+				<li>Guardar tus películas favoritas</li>
+				<li>Acelerar la compra.</li>
+				<li>Recibir ofertas especiales.</li>
+				<input id="boton_creado" type="button" value="YA TENGO CUENTA">
+			</div>
+			
+		</div>
+		</div>
+		
+		
+		<div id="contenedor_cuenta_creada">
+		
+		<div id="caja_iniciar">
+		<div id="linea_cuenta2">
+		<p class="n_formulario">Correo electrónico</p><input class="c_formulario2" id="correo_ingresar" type="text">
+		<p class="letra_error" id="correo_error"></p>
+		<p class="n_formulario">Contraseña</p><input  class="c_formulario2" id="contrasena_ingresar" type="text">
+		<p class="letra_error" id="contrasena_error"></p>
+		<input id="btn_entrar" type="button" value="ENTRAR">
+		</div>
+		</div>
+		<div class="ingresar_cuenta">
+	       <div class="informacion">
+		        <p>Con tu cuenta puedes:</p>
+				<li>Guardar tus películas favoritas</li>
+				<li>Acelerar la compra.</li>
+				<li>Recibir ofertas especiales.</li>
+		<input id="btn_crear" type="button" value="CREAR CUENTA">	
+		</div>
+		</div>
+		
+		</div>
+		
+		
+	</div>
+</div>
+</div>
+
+<div id="linea_sesion">
+<div id="contenedor_sesion">	
+    <span class="icon-user">
+    </span>
+	<p id="iniciar">REGÍSTRATE</p>
+	
+</div>
+</div>
+
+<nav>
+
+<div id="contenedor_nav">
+	<div id="contenedor_logo">
+		<a href="inicio.html"><img src="img/logo.png" alt=""></a>
+	</div>
+	
+	<div id="menu_movil2"><img src="img/menu_movil-01.png" alt=""></div>	
+	<div id="menu_movil"><img src="img/menu_movil-01.png" alt=""></div>
+	
+	<div id="contenedor_menu">
+		<a class="menu_borde" href="inicio.html"><p>INICIO</p></a>
+		<a class="menu_borde" href="inicio.html"><p>NOSOTROS</p></a>
+		<a class="menu_borde1" id="btn_promociones" href="cartelera.html"><p>PROMOCIONES</p></a>
+		<div id="sub_menu1">
+			<a class="submenu" href="">COMPRAR</a>
+			<a class="submenu" href="">PREVENTA</a>
+		</div>
+		<a class="menu_borde2" id="btn_sedes" href="#"><p>SEDES</p></a>
+		<div id="sub_menu">
+			<a class="submenu" href="lima.html">LIMA</a>
+			<a class="submenu" href="">PROVINCIA</a>
+		</div>
+		<a class="menu_borde" id="ocultar_linea_menu" href="contacto.html"><p>CONTACTO</p></a>
+	</div>
+	
+	<div id="contenedor_buscador">
+	<input type="text" placeholder="BUSCAR">	
+	</div>
+</div>	
+	
+</nav>
+
+
+<div id="fondo_menu_movil">
+<div id="nav_movil">
+	<ul>
+		<li><a href="inicio.html">INICIO</a></li>
+		<li><a href="inicio.html">NOSOTROS</a></li>
+		<li><a href="promociones.html">PROMOCIONES</a></li>
+		<li><a href="lima.html">SEDES</a></li>
+		<li><a href="contacto.html">CONTACTO</a></li>
+	</ul>
+</div>
+</div>
+
+<header id="header_inicio">
+    
+	
+	
+</header>
+
+<section id="centrar_section_sedes">
+	
+	<div id="section_sedes">
+	
+	<h3>SEDES PROVINCIAS</h3>
+	
+	<div id="contenedor_caja_sedes">
+	
+	<div class="cajas_sedes"><img src="img/sede5.jpg" alt=""></div>
+	<div class="cajas_sedes"><img src="img/sede6.jpg" alt=""></div>
+	<div class="cajas_sedes"><img src="img/sede7.jpg" alt=""></div>
+	<div class="cajas_sedes"><img src="img/sede4.jpg" alt=""></div>
+	
+	</div>
+	
+	
+	<div id="contenedor_img_sedes">	
+	<img src="img/sede6.jpg" alt="">
+	</div>
+	
+	
+	<div id="fondo_h3_sedes">
+		
+	<h3>ENCUENTRANOS EN:</h3>	
+		
+	</div>
+	
+	<div class="encontrar_sedes"><img src="img/sede_articulo1.jpg" alt=""><div class="texto_img"><h4>LIMA</h4><p>Av. San Felipe S. Salaverry SN Cdra 24 Inters. Av. Punta del Este Jesus Maria Lima Lima</p></div></div>
+	<div class="encontrar_sedes"><img src="img/sede_articulo2.jpg" alt=""><div class="texto_img"><h4>PROVINCIA</h4><p>Av. San Felipe S. Salaverry SN Cdra 24 Inters. Av. Punta del Este Jesus Maria Lima Lima</p></div></div>
+	
+	
+	</div>
+	
+</section>
+ 
+
+<footer>
+    <div id="linea_footer">
+     <div id="contenedor_linea">
+       <div id="footer_derecha">
+        <p id="letra_linea">RECIBIR ACTUALIZACIONES</p>
+    	<input id="correo" type="text" placeholder="CORREO ELECTRÓNICO">
+    	<input id="boton"  type="button" value="">
+    	
+    	</div>
+    </div>	
+    </div>
+	
+	<div id="contenedor_footer">
+		
+		<div class="pie">
+		
+			<li class="tema_footer">CARTELERA</li>
+			<li><a href="#">Preventas</a></li>
+			<li><a href="#">Contenidos Alternativos</a></li>
+			<li><a href="#">Muestras y Festivales</a></li>
+			<li><a href="#">Próximos Estrenos</a></li>
+			<li><a href="#">Contenido CineUniverse</a></li>
+			
+		</div>
+		<div class="pie">
+			<li class="tema_footer">¿QUIÉNES SOMOS?</li>
+			<li><a href="#">Únete al equipo</a></li>
+			<li><a href="#">Próximas Aperturas</a></li>
+			<li><a href="#">Corporativo</a></li>
+			
+		</div>
+		<div class="pie">
+			<li class="tema_footer">LEGALES</li>
+			<li><a href="#">Términos y condiciones</a></li>
+			<li><a href="#">Aviso de privacidad</a></li>
+		</div>
+		<div class="pie">
+			<li class="tema_footer">CONTACTO</li>
+			<li><a href="#">Déjanos tus comentarios</a></li>
+			<li><a href="#">Chatea con los expertos</a></li>
+			<div id="contenedor_red">
+			<div class="red"><a href="https://es-la.facebook.com" target="_blank"><img src="img/facebook.png" alt="" data-op="0"></a></div>
+			<div class="red"><a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" alt=""  data-op="1"></a></div>
+			<div class="red"><a href="https://www.youtube.com/?hl=es-419&gl=PE" target="_blank"><img src="img/youtube.png" alt=""  data-op="2"></a></div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="linea2_footer">
+		<p>Contenido del sitio 2017©  CineUniverse® de Perú, S.A. de C.V.</p>
+	</div>
+	
+</footer>
+
+
+</body>
+</html>

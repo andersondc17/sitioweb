@@ -1,0 +1,612 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cine Universe</title>
+<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="../css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+
+
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/codigo.js"></script>
+<script src="../js/asiento.js"></script>
+<script src="../js/jquery-1.4.4.js"></script>
+<script src="../js/menu_fijo.js"></script>
+</head>
+
+<body>
+
+<div id="ventana">
+<div id="centrar_ventana_sesion">
+	<div id="contenedor_iniciar">
+		<div id="linea_iniciar">
+		<div id="cerrar"><img src="../img/cerrar.png" alt=""></div>
+			<h2>CREAR UNA CUENTA</h2>
+		</div>
+		
+		<div id="contenedor_iniciar_sesion">
+		<div id="crear_cuenta">
+		
+		<div id="linea_cuenta">
+		<div class="contenedor_input_sesion">
+			<p class="n_formulario">Nombres</p>
+			<input  class="c_formulario"  id="ipt_nombre" type="text" placeholder="Nombre Completo">
+			<p class="letra_error1" id="nombre_input"></p><b class="triangulo" id="triangulo1">&#x25BC;</b>
+        </div>
+			
+		<div class="contenedor_input_sesion">	
+			<p class="n_formulario">Apellidos</p>
+			<input class="c_formulario" id="ipt_apellido" type="text" placeholder="Apellido Completo">
+			<p class="letra_error1" id="apellido_input"></p><b class="triangulo" id="triangulo2">&#x25BC;</b>
+		</div>	
+		
+		<div class="contenedor_input_sesion">			
+			<p class="n_formulario">Correo electrónico</p>
+			<input class="c_formulario" id="ipt_correo" type="text" placeholder="Correo">
+			<p class="letra_error1" id="correo_input">Correo Incorrecto</p><b class="triangulo">&#x25BC;</b>
+		</div>	
+			
+		
+		<div class="contenedor_input_sesion">
+			<p class="n_formulario">Teléfono</p>
+			<input class="c_formulario" id="ipt_telefono" type="text" placeholder="Teléfono">
+			<p class="letra_error1" id="telefono_input">Telefono Incorrecto</p><b class="triangulo">&#x25BC;</b>
+		</div>
+		
+		<div class="contenedor_input_sesion">	
+			<p class="n_formulario">Contraseña</p>
+			<input class="c_formulario" id="ipt_contrasena" type="text" placeholder="Contraseña">
+            <p class="letra_error1" id="contrasena_input">Contraseña Incorrecta</p><b class="triangulo">&#x25BC;</b>
+        </div> 
+			
+			<div id="aceptar_politica">
+			<input id="check" type="checkbox">
+			<p id="politica">He leído y acepto los Términos y Condiciones así como las Políticas de Privacidad de CineUniverse.</p>
+			<input id="boton_cuenta" type="button" value="CREAR CUENTA">
+			</div>
+		</div>
+		</div>
+		<div class="ingresar_cuenta">
+			<div class="informacion">
+				<p>Con tu cuenta puedes:</p>
+				<li>Guardar tus películas favoritas</li>
+				<li>Acelerar la compra.</li>
+				<li>Recibir ofertas especiales.</li>
+				<input id="boton_creado" type="button" value="YA TENGO CUENTA">
+			</div>
+			
+		</div>
+		</div>
+		
+		
+		<div id="contenedor_cuenta_creada">
+		
+		<div id="caja_iniciar">
+		<div id="linea_cuenta2">
+		<p class="n_formulario">Correo electrónico</p><input class="c_formulario2" id="correo_ingresar" type="text">
+		<p class="letra_error" id="correo_error"></p>
+		<p class="n_formulario">Contraseña</p><input  class="c_formulario2" id="contrasena_ingresar" type="text">
+		<p class="letra_error" id="contrasena_error"></p>
+		<input id="btn_entrar" type="button" value="ENTRAR">
+		</div>
+		</div>
+		<div class="ingresar_cuenta">
+	       <div class="informacion">
+		        <p>Con tu cuenta puedes:</p>
+				<li>Guardar tus películas favoritas</li>
+				<li>Acelerar la compra.</li>
+				<li>Recibir ofertas especiales.</li>
+		<input id="btn_crear" type="button" value="CREAR CUENTA">	
+		</div>
+		</div>
+		
+		</div>
+		
+		
+	</div>
+</div>
+</div>
+
+
+
+<div id="asientos_completos">
+    <div id="centrar_anuncio">
+	<div id="caja_anuncio">
+	<p>YA SELECCIONÓ TODAS LAS BUTACAS.</p>
+	<div class="caja_butaca"><img src="../img/asiento_advertencia1.png" alt=""></div>
+	<input id="aceptar_butacas" type="button" value="Aceptar">
+	</div>	
+	</div>
+</div>
+
+<div id="linea_sesion">
+<div id="contenedor_sesion">	
+    <span class="icon-user">
+    </span>
+	<p id="iniciar">REGÍSTRATE</p>
+	
+</div>
+</div>
+
+<nav>
+
+<div id="contenedor_nav">
+	<div id="contenedor_logo">
+		<a href="../inicio.html"><img src="../img/logo.png" alt=""></a>
+	</div>
+	
+	<div id="menu_movil2"><img src="../img/menu_movil-01.png" alt=""></div>	
+	<div id="menu_movil"><img src="../img/menu_movil-01.png" alt=""></div>	
+	
+	<div id="contenedor_menu">
+		<a class="menu_borde" href="../inicio.html"><p>INICIO</p></a>
+		<a class="menu_borde" href="../inicio.html"><p>NOSOTROS</p></a>
+		<a class="menu_borde1" id="btn_promociones" href="../cartelera.html"><p>PROMOCIONES</p></a>
+		<div id="sub_menu1">
+			<a class="submenu" href="../cartelera.html">COMPRAR</a>
+			<a class="submenu" href="../preventa.html">PREVENTA</a>
+		</div>
+		<a class="menu_borde2" id="btn_sedes" href="#"><p>SEDES</p></a>
+		<div id="sub_menu">
+			<a class="submenu" href="../lima.html">LIMA</a>
+			<a class="submenu" href="../provincia.html">PROVINCIA</a>
+		</div>
+		<a class="menu_borde" id="ocultar_linea_menu" href="../contacto.html"><p>CONTACTO</p></a>
+	</div>
+	
+	<div id="contenedor_buscador">
+	<input type="text" placeholder="BUSCAR">	
+	</div>
+</div>
+	
+</nav>
+
+<div id="fondo_menu_movil">
+<div id="nav_movil">
+	<ul>
+		<li><a href="../inicio.html">INICIO</a></li>
+		<li><a href="../inicio.html">NOSOTROS</a></li>
+		<li><a href="../cartelera.html">PROMOCIONES</a></li>
+		<li><a href="../lima.html">SEDES</a></li>
+		<li><a href="../contacto.html">CONTACTO</a></li>
+	</ul>
+</div>
+</div>
+
+
+<section id="contenedor_banner_pelicula">
+	
+<div id="contenedor_banner_reloj">
+	
+	<article id="caja_banner">
+	<h3>COMPRA Y RESERVA TUS BOLETOS</h3>
+	
+		<div id="imagen_banner">
+		<img src="../img/1.jpg" alt="">
+		</div>
+		
+		
+		<div id="contenedor_listar">	
+		<div id="lista_info">
+			<li>CINE</li>
+			<li>PELÍCULA</li>
+			<li>FECHA</li>
+			<li>FUNCIÓN</li>
+		</div>	
+		<div id="lista_res">
+			<li>Cine Lima Norte</li>
+			<li>Spiderman</li>
+			<li>Viernes 27 Octubre</li>
+			<li>10:00pm</li>
+		</div>
+		</div>
+		
+	</article>
+	
+	<article id="total">
+	
+ 
+	
+	<div id="contenedor_reloj">
+		
+		
+		<div id="caja_tiempo">
+		<p>Tiempo restante:</p>
+		<h3>00:00</h3>
+		</div>
+		
+		<div id="img_reloj">
+		<img src="../img/reloj.png" alt="">
+		</div>
+		
+		<div id="caja_total">
+		    <h5>TOTAL:</h5>
+			<h3 id="sumatotal">S/.0.00</h3>
+			<p>Otra Película</p>
+		</div>
+		
+	</div>
+		
+		
+	
+		
+	</article>
+	
+	</div>
+</section>
+
+<section id="centrar_caja_boleto">
+<section id="contenedor_boleto">
+	
+	<div id="contenedor_menu_boleto">
+		<div class="subtema" id="subtema_entrada"><img src="../img/entrada.png" alt="">
+		<p>1.Entradas</p>
+		</div>
+		
+		<div class="subtema" id="subtema_asiento"><img src="../img/asiento2.png" alt="">
+		<p>2.Asiento</p>
+		</div>
+		
+		<div class="subtema" id="subtema_pagar"><img src="../img/pago1.png" alt="">
+		<p>3.Pagar</p>
+		</div>
+		
+		<div class="subtema" id="subtema_revisar"><img src="../img/recibir1.png" alt="">
+		<p>3.Revisar</p>
+		</div>
+	</div>
+	
+	<div id="contenedor_cantidad_boleto">
+	<h3>SELECCIONA CUÁNTOS BOLETOS QUIERES</h3>
+	<div id="caja_texto_boleto">
+		Elige el número y tipo de entradas que deseas. En salas numeradas, los mejores lugares disponibles se eligen de forma automática. Se puede comprar como máximo 10 boletos por transacción. Recuerda que únicamente el titular de la tarjeta puede retirar las entradas presentando la tarjeta de crédito o débito y la identificación oficial en la taquilla de Cinépolis. El precio de Martes no aplica en días festivos.
+	</div>
+	
+	
+	
+		<div id="tema_tabla">
+		    <li>SUBTOTAL:</li>
+			<li>COSTO:	</li>
+			<li>CANTIDAD:</li>
+			
+		</div>
+		
+		<div id="contenedor_categoria">
+		
+		<div class="categoria_boleto">
+		
+		<div class="cajas1_categorias">
+		<p>3 ERA EDAD</p>
+		</div>
+		
+		
+		<div class="cajas2_categorias">
+		
+		<div class="contenedor_caja_conteo">		
+		<div class="caja_menos" id="3erEdad_menos">
+			<img src="../img/menos.png" alt="">
+		</div>
+		<p id="cant_3erEdad">0</p>
+		<div class="caja_mas" id="3erEdad_mas">
+			<img src="../img/suma.png" alt="">
+		</div>
+		</div>	
+			
+		</div>
+		
+		
+		<div class="cajas3_categorias">
+		<li>S/.14.00</li>
+		</div>
+		
+		
+		<div class="cajas4_categorias">
+		<h4 id="total_3erEdad">S/.0.00</h4>
+		</div>
+		
+		</div>
+		
+		<div class="categoria_boleto">
+		
+		<div class="cajas1_categorias">
+		<p>NIÑOS</p>
+		</div>
+		
+		<div class="cajas2_categorias">
+		<div class="contenedor_caja_conteo">		
+		<div class="caja_menos" id="niños_menos">
+			<img src="../img/menos.png" alt="">
+		</div>
+		<p id="cant_niños">0</p>
+		<div class="caja_mas" id="niños_mas">
+			<img src="../img/suma.png" alt="">
+		</div>
+		</div>		
+		</div>
+		
+		<div class="cajas3_categorias">
+		<li>S/.10.00</li>
+		</div>
+		<div class="cajas4_categorias">
+		<h4 id="total_niños">S/.0.00</h4>
+		</div>
+		
+		</div>
+		
+		<div class="categoria_boleto">
+		
+		<div class="cajas1_categorias">
+		<p>ADULTO</p>
+		</div>
+		
+		<div class="cajas2_categorias">
+		<div class="contenedor_caja_conteo">		
+		<div class="caja_menos" id="adulto_menos">
+			<img src="../img/menos.png" alt="">
+		</div>
+		<p id="cant_adulto">0</p>
+		<div class="caja_mas" id="adulto_mas">
+			<img src="../img/suma.png" alt="">
+		</div>
+		</div>		
+		</div>
+		<div class="cajas3_categorias">
+		<li>S/.16.00</li>
+		</div>
+		<div class="cajas4_categorias">
+		<h4 id="total_adulto">S/.0.00</h4>
+		</div>
+		
+		</div>
+		
+		
+		
+		</div>
+	<div id="centrar_btn_asiento">
+	<div id="caja_elegir_asiento">Elige un lugar</div>
+	</div>
+	</div>
+	
+	<!----------------------------------------asiento-------------------------------------->
+	
+	<div id="contenedor_escoger_asiento">
+		<h3>SELECCIONA TUS ASIENTOS</h3>
+	
+			
+		<div id="texto_asiento">
+			<p id="elegir_posicion_asiento"></p>
+		
+		</div>	
+		
+	
+	
+		<div id="contenedor_tipo_asiento">		
+		
+		<div id="centrar_asiento">
+			<div class="tipo_asiento">
+			<img src="../img/asiento_selecionado.png" alt="">
+			<p>Selecionado</p>
+			</div>
+			
+			<div class="tipo_asiento">
+			<img src="../img/asiento.png" alt="">
+			<p>Disponible</p>
+			</div>
+			
+			<div class="tipo_asiento">
+			<img src="../img/asiento_ocupado.png" alt="">
+			<p>Ocupado</p>
+			</div>
+		</div>
+		
+		</div>
+		
+		
+	
+		
+		<div id="contenedor_asiento">
+		<div id="fila1">
+
+		</div>
+		
+		<div id="fila2">
+		</div>
+		</div>
+		
+		
+		
+		<div id="contenedor_btn_asiento">
+		<div id="boton_asiento">
+			<p id="regresar">Regresar</p>
+			<p id="pagar">Haz tu pago</p>
+		</div>
+		</div>
+	</div>
+	
+	
+	<!----------------------------------------pago-------------------------------------->
+	
+	<div id="contenedor_pagar">
+		<h3>REALIZA TU PAGO</h3>
+		<div id="contenedor_letras_formulario">
+			<div class="caja_formulario"><p>Tipo de tarjeta:</p>
+			</div>
+			
+			<div class="caja_formulario"><p>Nombre de la tarjeta:</p>
+			</div>
+			
+			<div class="caja_formulario"><p>Nombre del titular de la tarjeta:</p>
+			</div>
+			
+			<div class="caja_formulario"><p>Fecha de vencimiento:</p>
+			</div>
+			
+			
+			<div class="caja_formulario"><p>Correo electrónico:</p>
+			</div>
+			
+			
+			<div class="caja_formulario"><p>Número de documento</p>
+			</div>
+			
+			</div>
+			
+
+
+
+
+
+
+<div id="contenedor_input_formulario">
+			
+			<div class="caja_input">
+				<div class="tarjeta"><img src="../img/visa.png" alt=""></div>
+				<div class="tarjeta"><img src="../img/visa_electron.png" alt=""></div>
+				<div class="tarjeta"><img src="../img/mastercard.png" alt=""></div>
+				<div class="tarjeta"><img src="../img/american.png" alt=""></div>
+			</div>
+			
+			<div class="caja_input"><input type="text" placeholder="Numero de tarjeta">
+			</div>
+			
+			<div class="caja_input"><input type="text" placeholder="Nombre del titular de la tarjeta">
+            </div>  
+               
+             <div class="caja_input">  
+                <select name="mes" id="mes">
+                <option value="">Mes</option>
+				<option value="">Enero</option>
+				<option value="">Febrero</option>
+				<option value="">Marzo</option>
+				<option value="">Abril</option>
+				<option value="">Mayo</option>
+				<option value="">Junio</option>
+				<option value="">Julio</option>
+				<option value="">Agosto</option>
+				<option value="">Septiembre</option>
+				<option value="">Octubre</option>
+				<option value="">Noviembre</option>
+				<option value="">Diciembre</option>
+			    </select>
+			
+			    <select name="año" id="tiempo">
+			    <option value="">Año</option>
+				<option value="">2028</option>
+				<option value="">2027</option>
+				<option value="">2026</option>
+				<option value="">2025</option>
+				<option value="">2024</option>
+				<option value="">2023</option>
+				<option value="">2022</option>
+				<option value="">2021</option>
+				<option value="">2020</option>
+				<option value="">2019</option>
+				<option value="">2018</option>
+				<option value="">2017</option>
+			    </select>
+			
+			    <p id="cvc_letra">CVC</p>
+			    <input type="text" id="cvc">
+			</div> 
+			
+			<div class="caja_input">
+			<input type="text" placeholder="@ Email">
+            </div>
+		 
+	        <div class="caja_input">
+		    <select name="documento" id="seleccionar">
+		        <option value="">Seleccionar</option>
+				<option value="">Carne de extranjeria</option>
+				<option value="">DNI</option>
+				<option value="">Pasaporte</option>
+				<option value="">RUT</option>
+			</select>
+			<input type="text" id="seleccionar_input">
+			</div>
+			
+			</div>
+			
+		<div id="centrar_btn">
+		<div id="btn_contenedor_pago">
+			
+			<div id="btn_regresar_pago">Regresar</div>
+			<div id="btn_enviar_pago">Enviar</div>
+			
+		</div>
+	    </div>
+	</div>
+	
+<!--------------------------------------enviar-------------------------------------->
+		
+<div id="contenedor_enviar">
+		<h3>REVISAR TU CORREO</h3>	
+		
+		<h4>Estimado cliente, gracias por usar el servicio de Cineticket de CineUniverse®. Los datos de su compra o reservación están indicados en su correo. Que disfrute su función.</h4>
+</div>
+	
+	
+</section>
+ 
+ </section>
+ 
+
+<footer>
+    <div id="linea_footer">
+     <div id="contenedor_linea">
+       <div id="footer_derecha">
+        <p id="letra_linea">RECIBIR ACTUALIZACIONES</p>
+    	<input id="correo" type="text" placeholder="CORREO ELECTRÓNICO">
+    	<input id="boton"  type="button" value="">
+    	
+    	</div>
+    </div>	
+    </div>
+	
+	<div id="contenedor_footer">
+		
+		<div class="pie">
+		
+			<li class="tema_footer">CARTELERA</li>
+			<li><a href="#">Preventas</a></li>
+			<li><a href="#">Contenidos Alternativos</a></li>
+			<li><a href="#">Muestras y Festivales</a></li>
+			<li><a href="#">Próximos Estrenos</a></li>
+			<li><a href="#">Contenido CineUniverse</a></li>
+			
+		</div>
+		<div class="pie">
+			<li class="tema_footer">¿QUIÉNES SOMOS?</li>
+			<li><a href="#">Únete al equipo</a></li>
+			<li><a href="#">Próximas Aperturas</a></li>
+			<li><a href="#">Corporativo</a></li>
+			
+		</div>
+		<div class="pie">
+			<li class="tema_footer">LEGALES</li>
+			<li><a href="#">Términos y condiciones</a></li>
+			<li><a href="#">Aviso de privacidad</a></li>
+		</div>
+		<div class="pie">
+			<li class="tema_footer">CONTACTO</li>
+			<li><a href="#">Déjanos tus comentarios</a></li>
+			<li><a href="#">Chatea con los expertos</a></li>
+			<div id="contenedor_red">
+			<div class="red"><a href="https://es-la.facebook.com" target="_blank"><img src="../img/facebook.png" alt="" data-op="0"></a></div>
+			<div class="red"><a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter.png" alt=""  data-op="1"></a></div>
+			<div class="red"><a href="https://www.youtube.com/?hl=es-419&gl=PE" target="_blank"><img src="../img/youtube.png" alt=""  data-op="2"></a></div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="linea2_footer">
+		<p>Contenido del sitio 2017©  CineUniverse® de Perú, S.A. de C.V.</p>
+	</div>
+	
+</footer>
+
+
+</body>
+</html>
